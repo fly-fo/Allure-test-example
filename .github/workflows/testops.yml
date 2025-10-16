@@ -49,7 +49,7 @@ jobs:
           allure-project-id: 67
       - name: Run pytest Tests
         run: |
-          allurectl watch -- pytest tests --alluredir=${ALLURE_RESULTS}
+         ./allurectl watch -- pytest -q Tests --alluredir="${ALLURE_RESULTS}"
         env:
           ENDPOINT: ${{ github.event.inputs.ENDPOINT }}
           BROWSER: ${{ github.event.inputs.BROWSER }}
