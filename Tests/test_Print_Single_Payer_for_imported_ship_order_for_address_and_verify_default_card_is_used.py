@@ -6,12 +6,12 @@ TITLE = "Print Single Payer for imported ship order for address and verify defau
 @allure.tag("Automation")
 @allure.epic("UI Automation")
 @allure.suite("ShipAccel UI Automation")
-@allure.story(TITLE)
+@allure.feature(TITLE)
 @allure.title(TITLE)
 @allure.label("owner", "Sowmya Katamaneni")
 @allure.severity("Medium")
-@allure.trProject("Shipaccel")
-@allure.layer("UI")
+@allure.label("trProject", "Shipaccel")
+@allure.label("layer", "UI")
 @pytest.mark.parametrize(
     "address,single_payer",
     [("CT", "Fedex label"), ("CT", "UPS label"),
