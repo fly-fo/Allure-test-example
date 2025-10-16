@@ -9,7 +9,7 @@ on:
       ENDPOINT:
         description: Endpoint
         required: false
-        default: demo.qatools.cloud/
+        default: https://pitneybowes.testops.cloud/
       BROWSER:
         description: Browser
         required: false
