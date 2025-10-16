@@ -52,6 +52,24 @@ jobs:
           allure-endpoint: https://pitneybowes.testops.cloud
           allure-token: ${{ secrets.ALLURE_TOKEN }}
           allure-project-id: 67
+
+      - name: Sanity: pytest collection
+        run: pytest --collect-only -q || true
+
+      - name: Run tests with allurectl
+        env:
+          ENDPOINT: ${{ github.event.inputs.ENDPOINT }}
+          BROWSER: ${{ github.event.inputs.BROWSER }}
+          OS: ${{ github.event.inputs.OS }}
+          ALLURE_JOB_RUN_ID: ${{ github.event.inputs.ALLURE_JOB_RUN_ID }}
+          ALLURE_RESULTS: allure-results
+        run: allurectl watch -- pytest -q --alluredir="${ALLURE_RESULTS}" --capture=no
+
+      - name: List allure-results after run
+        if: always()
+        run: |
+          ls -la "${ALLURE_RESULTS}" || true
+          echo "files: $(ls -1 ${ALLURE_RESULTS} 2>/dev/null | wc -l)"
           
       - name: Run tests
         run: allurectl watch -- pytest --alluredir=${ALLURE_RESULTS} --capture=no
