@@ -42,10 +42,12 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Install dependencies
+      - name: Download allurectl
         run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          set -euxo pipefail
+          curl -fsSL https://github.com/allure-framework/allurectl/releases/latest/download/allurectl_linux_amd64 -o allurectl
+          chmod +x allurectl
+          ./allurectl --version
 
       - name: Install allurectl
         uses: allure-framework/setup-allurectl@v1
