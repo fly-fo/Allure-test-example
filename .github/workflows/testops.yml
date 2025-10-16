@@ -58,11 +58,9 @@ PY
           allure-token: ${{ secrets.ALLURE_TOKEN }}
           allure-project-id: 67
 
-      # A) prove collection
       - name: Sanity: pytest collection
         run: pytest --collect-only -q || true
 
-      # B) run via allurectl (explicit flags)
       - name: Run tests with allurectl
         env:
           ENDPOINT: ${{ github.event.inputs.ENDPOINT }}
@@ -85,14 +83,12 @@ PY
             --launch-name "GH ${GITHUB_REPOSITORY}@${GITHUB_REF_NAME} #${GITHUB_RUN_NUMBER}" \
             -- pytest -q --alluredir="${ALLURE_RESULTS}" --capture=no
 
-      # C) prove results were generated
       - name: List allure-results after run
         if: always()
         run: |
           ls -la "${ALLURE_RESULTS}" || true
           echo "files: $(ls -1 "${ALLURE_RESULTS}" 2>/dev/null | wc -l)"
 
-      # D) keep raw results for debugging
       - name: Upload allure-results artifact
         if: always()
         uses: actions/upload-artifact@v4
@@ -101,7 +97,6 @@ PY
           path: allure-results
           if-no-files-found: warn
 
-      # E) fallback upload with debug (optional but helpful)
       - name: Fallback upload to TestOps (debug)
         if: always()
         env:
