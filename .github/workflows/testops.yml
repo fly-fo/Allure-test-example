@@ -47,10 +47,9 @@ jobs:
           allure-endpoint: https://pitneybowes.testops.cloud/
           allure-token: ${{ secrets.ALLURE_TOKEN }}
           allure-project-id: 67
-      - name: Run pytest tests
+      - name: Run pytest Tests
         run: |
-          chmod +x exec-tests.sh
           allurectl watch -- pytest tests --alluredir=${ALLURE_RESULTS}
         env:
-          TEST_ENDPOINT: ${{ github.event.inputs.TEST_ENDPOINT }}
-          TEST_BROWSER: ${{ github.event.inputs.TEST_BROWSER }}
+          ENDPOINT: ${{ github.event.inputs.ENDPOINT }}
+          BROWSER: ${{ github.event.inputs.BROWSER }}
