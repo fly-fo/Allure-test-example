@@ -9,7 +9,7 @@ TITLE = "Print Single Payer for imported ship order for address and verify defau
 @allure.story(TITLE)
 @allure.title(TITLE)
 @allure.label("owner", "Sowmya Katamaneni")
-@allure.priority("Medium")
+@allure.severity("Medium")
 @allure.trProject("Shipaccel")
 @allure.layer("UI")
 @pytest.mark.parametrize(
