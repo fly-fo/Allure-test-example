@@ -42,13 +42,12 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Download allurectl (manual)
-        run: |
-          set -euxo pipefail
-          curl -fsSL https://github.com/allure-framework/allurectl/releases/latest/download/allurectl_linux_amd64 -o allurectl
-          chmod +x allurectl
-          ./allurectl --version
-          which allurectl || true   # should NOT find a global one; we use ./allurectl
+      - name: install and configure allurectl
+        uses: allure-framework/setup-allurectl@v1
+        with:
+          allure-endpoint: https://pitneybowes.testops.cloud/
+          allure-token: ${{ secrets.ALLURE_TOKEN }}
+          allure-project-id: 67
 
       - name: Run tests
         env:
