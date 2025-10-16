@@ -27,7 +27,7 @@ env:
   ALLURE_PROJECT_ID: 67
   ALLURE_TOKEN: ${{ secrets.ALLURE_TOKEN }}
   ALLURE_JOB_RUN_ID: ${{ github.event.inputs.ALLURE_JOB_RUN_ID }}
-  ALLURE_RESULTS: allure-results
+  ALLURE_RESULTS: "allure-results"
 
 jobs:
   autotests:
@@ -42,17 +42,10 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Download allurectl
-        run: |
-          set -euxo pipefail
-          curl -fsSL https://github.com/allure-framework/allurectl/releases/latest/download/allurectl_linux_amd64 -o allurectl
-          chmod +x allurectl
-          ./allurectl --version
-
-      - name: Install allurectl
+      - name: install and configure allurectl
         uses: allure-framework/setup-allurectl@v1
         with:
-          allure-endpoint: https://pitneybowes.testops.cloud
+          allure-endpoint: https://pitneybowes.testops.cloud/
           allure-token: ${{ secrets.ALLURE_TOKEN }}
           allure-project-id: 67
 
