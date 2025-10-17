@@ -9,7 +9,7 @@ TITLE = (
 @allure.tag("Automation")
 @allure.epic("UI Automation")
 @allure.suite("ShipAccel UI Automation")
-@allure.feature(TITLE)                 # feature == title
+@allure.story(TITLE)                 # feature == title
 @allure.title(TITLE)
 @allure.label("owner", "Sowmya Katamaneni")
 @allure.label("priority", "Medium")
