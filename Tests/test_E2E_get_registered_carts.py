@@ -6,14 +6,13 @@ TITLE = "GetRegisteredCarts"
 @allure.tag("Automation")
 @allure.epic("Test Cases")
 @allure.suite("Master")
-@allure.feature("GetRegisteredCarts")
+@allure.story("GetRegisteredCarts")
 @allure.title(TITLE)
 @allure.label("owner", "Shivam Sanjay Desale")
 @allure.label("priority", "Medium")
 @allure.label("trProject", "Connectors")
 # Hybrid layer: mark both UI and API for TestOps custom field
-@allure.label("layer", "UI")
-@allure.label("layer", "API")
+@allure.label("layer", "UI-API")
 @pytest.mark.parametrize(
     "action",
     [
