@@ -1,7 +1,7 @@
 import pytest
 import allure
 
-TITLE = "Set address credit card as DEFAULT for Single Payer across carriers and flows"
+TITLE = "Verify if we are able to set address credit card as default card for Single Payer across carriers and flows"
 
 @allure.tag("Automation")
 @allure.epic("UI Automation")
