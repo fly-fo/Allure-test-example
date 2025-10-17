@@ -6,7 +6,7 @@ TITLE = "Print Single Payer for imported ship order for address and verify defau
 @allure.tag("Automation")
 @allure.epic("UI Automation")
 @allure.suite("ShipAccel UI Automation")
-@allure.feature(TITLE)
+@allure.story(TITLE)
 @allure.title(TITLE)
 @allure.label("owner", "Sowmya Katamaneni")
 @allure.severity("Medium")
