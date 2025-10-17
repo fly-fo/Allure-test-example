@@ -6,7 +6,7 @@ TITLE = "Print SinglePayer for address and verify default card is used"
 @allure.tag("Automation")
 @allure.epic("UI Automation")
 @allure.suite("ShipAccel UI Automation")
-@allure.feature(TITLE)                 
+@allure.story(TITLE)                 
 @allure.title(TITLE)
 @allure.label("owner", "Sowmya Katamaneni")
 @allure.label("priority", "Medium")
