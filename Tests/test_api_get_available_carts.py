@@ -6,7 +6,7 @@ TITLE = "GetAvailableCarts"
 @allure.tag("Automation")
 @allure.epic("Test Cases")
 @allure.suite("Master")
-@allure.feature("GetAvailableCarts")           
+@allure.story("GetAvailableCarts")           
 @allure.title(TITLE)
 @allure.label("owner", "Shivam Sanjay Desale")
 @allure.label("priority", "Medium")
