@@ -6,7 +6,7 @@ TITLE = "Print Single Payer UPS label for batch addresses and verify default car
 @allure.tag("Automation")
 @allure.epic("UI Automation")
 @allure.suite("ShipAccel UI Automation")
-@allure.feature(TITLE)               
+@allure.story(TITLE)               
 @allure.title(TITLE)
 @allure.label("owner", "Sowmya Katamaneni")
 @allure.label("priority", "Medium")
