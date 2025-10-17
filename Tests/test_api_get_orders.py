@@ -6,7 +6,7 @@ TITLE = "GetOrders API"
 @allure.tag("Automation")
 @allure.epic("Test Cases")
 @allure.suite("Master")
-@allure.feature("GetOrders API")
+@allure.story("GetOrders API")
 @allure.title(TITLE)
 @allure.label("owner", "Shivam Sanjay Desale")
 @allure.label("priority", "Medium")
