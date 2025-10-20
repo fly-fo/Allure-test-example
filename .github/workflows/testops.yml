@@ -24,7 +24,7 @@ on:
 
 env:
   ALLURE_ENDPOINT: https://pitneybowes.testops.cloud
-  ALLURE_PROJECT_ID: 67
+  ALLURE_PROJECT_ID: 100
   ALLURE_TOKEN: ${{ secrets.ALLURE_TOKEN }}
   ALLURE_JOB_RUN_ID: ${{ github.event.inputs.ALLURE_JOB_RUN_ID }}
   ALLURE_RESULTS: "allure-results"
@@ -46,7 +46,7 @@ jobs:
         with:
           allure-endpoint: https://pitneybowes.testops.cloud/
           allure-token: ${{ secrets.ALLURE_TOKEN }}
-          allure-project-id: 67
+          allure-project-id: 100
       - name: Run pytest Tests
         run: |
          allurectl watch -- pytest -q Tests --alluredir="${ALLURE_RESULTS}"
