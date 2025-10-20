@@ -1,26 +1,6 @@
 import pytest
 import allure
 
-# 1
-@allure.tag("Automation")
-@allure.epic("UI Automation")
-@allure.suite("ShipAccel UI Automation")
-@allure.story("Connect disconnect BigCommerce Store")
-@allure.title("Connect disconnect BigCommerce Store")
-@allure.label("owner", "Sowmya Katamaneni")
-@allure.label("priority", "Medium")
-@allure.label("trProject", "Shipaccel")
-@allure.label("layer", "UI")
-@pytest.mark.ui
-def test_connect_disconnect_bigcommerce_store():
-    with allure.step("Open application / preconditions"):
-        assert True
-    with allure.step("Execute scenario: Connect/disconnect BigCommerce"):
-        assert True
-    with allure.step("Validate expected behavior"):
-        assert True
-
-
 # 2
 @allure.tag("Automation")
 @allure.epic("UI Automation")
@@ -199,27 +179,6 @@ def test_shopify_print_and_verify_in_history():
         assert True
     with allure.step("Validate expected behavior"):
         assert True
-
-
-# 11
-@allure.tag("Automation")
-@allure.epic("UI Automation")
-@allure.suite("ShipAccel UI Automation")
-@allure.story("Uploads an image to consumer tracking page")
-@allure.title("Uploads an image to consumer tracking page")
-@allure.label("owner", "Sowmya Katamaneni")
-@allure.label("priority", "Medium")
-@allure.label("trProject", "Shipaccel")
-@allure.label("layer", "UI")
-@pytest.mark.ui
-def test_upload_image_consumer_tracking():
-    with allure.step("Open application / preconditions"):
-        assert True
-    with allure.step("Execute scenario: Upload image on consumer tracking"):
-        assert True
-    with allure.step("Validate expected behavior"):
-        assert True
-
 
 # 12
 @allure.tag("Automation")
