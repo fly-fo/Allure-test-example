@@ -11,16 +11,6 @@ TITLE = "Disconnect API"
 @allure.label("owner", "Shivam Sanjay Desale")
 @allure.label("priority", "P0")
 @allure.label("product", "pitneyship")
-Custom fields
-
-Active 13
-Deleted
-Search by name
-
-Updated
-
-What are custom fields?
-With custom fields you can mark up and filter data, organize test cases and more
 @allure.label("trProject", "Connectors")
 @allure.label("layer", "API")
 @pytest.mark.parametrize(
