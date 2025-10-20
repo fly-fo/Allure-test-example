@@ -9,9 +9,10 @@ TITLE = "GetRegisteredCarts"
 @allure.story("GetRegisteredCarts")
 @allure.title(TITLE)
 @allure.label("owner", "Shivam Sanjay Desale")
-@allure.label("priority", "Medium")
+@allure.label("priority", "P0")
+@allure.label("product", "pitneyship")
+@allure.label("product", "shipaccel")
 @allure.label("trProject", "Connectors")
-# Hybrid layer: mark both UI and API for TestOps custom field
 @allure.label("layer", "UI-API")
 @pytest.mark.parametrize(
     "action",
