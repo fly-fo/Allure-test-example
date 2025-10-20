@@ -9,8 +9,9 @@ TITLE = "Onboard API"
 @allure.story("Onboard API")
 @allure.title(TITLE)
 @allure.label("owner", "Shivam Sanjay Desale")
-@allure.label("priority", "Medium")
-@allure.label("trProject", "Connectors")
+@allure.label("priority", "P0")
+@allure.label("product", "pitneyship")
+@allure.label("product", "shipaccel")
 @allure.label("layer", "API")
 @pytest.mark.parametrize(
     "action",
