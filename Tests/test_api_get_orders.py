@@ -9,7 +9,8 @@ TITLE = "GetOrders API"
 @allure.story("GetOrders API")
 @allure.title(TITLE)
 @allure.label("owner", "Shivam Sanjay Desale")
-@allure.label("priority", "Medium")
+@allure.label("priority", "P0")
+@allure.label("product", "pitneyship")
 @allure.label("trProject", "Connectors")
 @allure.label("layer", "API")
 @pytest.mark.parametrize(
