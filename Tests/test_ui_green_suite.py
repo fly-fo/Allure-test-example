@@ -9,6 +9,8 @@ import allure
 @allure.title("Connect Disconnect NetSuite Store")
 @allure.label("owner", "Sowmya Katamaneni")
 @allure.label("priority", "Medium")
+@allure.label("product", "pitneyship")
+@allure.label("product", "shipaccel")
 @allure.label("trProject", "Shipaccel")
 @allure.label("layer", "UI")
 @pytest.mark.ui
@@ -29,6 +31,8 @@ def test_connect_disconnect_netsuite_store():
 @allure.title("Create and update automation rule")
 @allure.label("owner", "Sowmya Katamaneni")
 @allure.label("priority", "Medium")
+@allure.label("product", "pitneyship")
+@allure.label("product", "shipaccel")
 @allure.label("trProject", "Shipaccel")
 @allure.label("layer", "UI")
 @pytest.mark.ui
@@ -49,6 +53,8 @@ def test_create_and_update_automation_rule():
 @allure.title("Create order in WIX store and verify order getting synced and we are creating shipping label successfully")
 @allure.label("owner", "Sowmya Katamaneni")
 @allure.label("priority", "Medium")
+@allure.label("product", "pitneyship")
+@allure.label("product", "shipaccel")
 @allure.label("trProject", "Shipaccel")
 @allure.label("layer", "UI")
 @pytest.mark.ui
@@ -69,6 +75,8 @@ def test_wix_order_sync_and_label():
 @allure.title("Delete automation rules")
 @allure.label("owner", "Sowmya Katamaneni")
 @allure.label("priority", "Medium")
+@allure.label("product", "pitneyship")
+@allure.label("product", "shipaccel")
 @allure.label("trProject", "Shipaccel")
 @allure.label("layer", "UI")
 @pytest.mark.ui
@@ -89,6 +97,8 @@ def test_delete_automation_rules():
 @allure.title("From ship orders page, print label and navigate to tracking link and verify")
 @allure.label("owner", "Sowmya Katamaneni")
 @allure.label("priority", "Medium")
+@allure.label("product", "pitneyship")
+@allure.label("product", "shipaccel")
 @allure.label("trProject", "Shipaccel")
 @allure.label("layer", "UI")
 @pytest.mark.ui
@@ -109,6 +119,8 @@ def test_ship_orders_print_and_tracking():
 @allure.title("Print consumer return label and email the label")
 @allure.label("owner", "Sowmya Katamaneni")
 @allure.label("priority", "Medium")
+@allure.label("product", "pitneyship")
+@allure.label("product", "shipaccel")
 @allure.label("trProject", "Shipaccel")
 @allure.label("layer", "UI")
 @pytest.mark.ui
@@ -129,6 +141,8 @@ def test_print_consumer_return_label_and_email():
 @allure.title("Set New York card as default card for Single Payer Fedex for ShipOrder flow")
 @allure.label("owner", "Sowmya Katamaneni")
 @allure.label("priority", "Medium")
+@allure.label("product", "pitneyship")
+@allure.label("product", "shipaccel")
 @allure.label("trProject", "Shipaccel")
 @allure.label("layer", "UI")
 @pytest.mark.ui
@@ -149,6 +163,8 @@ def test_set_ny_default_card_for_fedex_shiporder():
 @allure.title("ShipOrders V2 – Import ShipOrders through file upload and verify automation rules are applied and print labels for the orders")
 @allure.label("owner", "Sowmya Katamaneni")
 @allure.label("priority", "Medium")
+@allure.label("product", "pitneyship")
+@allure.label("product", "shipaccel")
 @allure.label("trProject", "Shipaccel")
 @allure.label("layer", "UI")
 @pytest.mark.ui
@@ -169,6 +185,8 @@ def test_shiporders_v2_import_and_print():
 @allure.title("Shopify – Print order and Verify Order number and Source in Shipping History")
 @allure.label("owner", "Sowmya Katamaneni")
 @allure.label("priority", "Medium")
+@allure.label("product", "pitneyship")
+@allure.label("product", "shipaccel")
 @allure.label("trProject", "Shipaccel")
 @allure.label("layer", "UI")
 @pytest.mark.ui
@@ -188,6 +206,8 @@ def test_shopify_print_and_verify_in_history():
 @allure.title("Verify can't print labels for fileupload shiporders without automation rules")
 @allure.label("owner", "Sowmya Katamaneni")
 @allure.label("priority", "Medium")
+@allure.label("product", "pitneyship")
+@allure.label("product", "shipaccel")
 @allure.label("trProject", "Shipaccel")
 @allure.label("layer", "UI")
 @pytest.mark.ui
@@ -208,6 +228,8 @@ def test_cant_print_without_rules_for_fileupload_orders():
 @allure.title("Verify consumer return label created for WIX order in shipping history")
 @allure.label("owner", "Sowmya Katamaneni")
 @allure.label("priority", "Medium")
+@allure.label("product", "pitneyship")
+@allure.label("product", "shipaccel")
 @allure.label("trProject", "Shipaccel")
 @allure.label("layer", "UI")
 @pytest.mark.ui
@@ -228,6 +250,8 @@ def test_wix_return_label_in_history():
 @allure.title("Verify designer page styles that we set are updated")
 @allure.label("owner", "Sowmya Katamaneni")
 @allure.label("priority", "Medium")
+@allure.label("product", "pitneyship")
+@allure.label("product", "shipaccel")
 @allure.label("trProject", "Shipaccel")
 @allure.label("layer", "UI")
 @pytest.mark.ui
@@ -248,6 +272,8 @@ def test_designer_page_styles_updated():
 @allure.title("Verify file upload ship order doesn't have email return link button in shipping history")
 @allure.label("owner", "Sowmya Katamaneni")
 @allure.label("priority", "Medium")
+@allure.label("product", "pitneyship")
+@allure.label("product", "shipaccel")
 @allure.label("trProject", "Shipaccel")
 @allure.label("layer", "UI")
 @pytest.mark.ui
@@ -268,6 +294,8 @@ def test_no_email_return_link_for_file_upload_order():
 @allure.title("Verify if we are able to set NY address credit card as default card for Single Payer Fedex")
 @allure.label("owner", "Sowmya Katamaneni")
 @allure.label("priority", "Medium")
+@allure.label("product", "pitneyship")
+@allure.label("product", "shipaccel")
 @allure.label("trProject", "Shipaccel")
 @allure.label("layer", "UI")
 @pytest.mark.ui
@@ -288,6 +316,8 @@ def test_set_ny_default_card_for_fedex_general():
 @allure.title("Verify return address, policy description, policy url that was set in Return Settings page is applied")
 @allure.label("owner", "Sowmya Katamaneni")
 @allure.label("priority", "Medium")
+@allure.label("product", "pitneyship")
+@allure.label("product", "shipaccel")
 @allure.label("trProject", "Shipaccel")
 @allure.label("layer", "UI")
 @pytest.mark.ui
@@ -308,6 +338,8 @@ def test_return_settings_applied():
 @allure.title("Verify we are able to email the returns link for the WIX order shipping transaction and able to access the page")
 @allure.label("owner", "Sowmya Katamaneni")
 @allure.label("priority", "Medium")
+@allure.label("product", "pitneyship")
+@allure.label("product", "shipaccel")
 @allure.label("trProject", "Shipaccel")
 @allure.label("layer", "UI")
 @pytest.mark.ui
