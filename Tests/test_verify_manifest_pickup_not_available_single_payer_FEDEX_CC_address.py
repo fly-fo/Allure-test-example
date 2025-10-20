@@ -10,6 +10,7 @@ TITLE = "Verify manifest and pickup not available for single payer FEDEX for CC 
 @allure.title(TITLE)
 @allure.label("owner", "Sowmya Katamaneni")
 @allure.label("priority", "Medium")
+@allure.label("product", "shipaccel")
 @allure.label("trProject", "Shipaccel")
 @allure.label("layer", "UI")
 @pytest.mark.parametrize("address", ["CT", "NY"], ids=["CT", "NY"])
