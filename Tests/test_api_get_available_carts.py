@@ -40,7 +40,7 @@ def test_get_available_carts(action):
         # Example (later):
         # resp = requests.get(f"{base_url}{endpoint}", headers=headers, timeout=30)
         # status_code = resp.status_code
-        status_code = 200  # dummy value
+        status_code = 502  # dummy value
         assert status_code in (200, 400, 401, 403, 404)
 
     # Step 3: Validate according to scenario
