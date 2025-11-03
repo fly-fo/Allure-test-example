@@ -1,7 +1,7 @@
 import pytest
 import allure
 
-@allure.id("7830")
+@allure.id("7995")
 @allure.tag("Automation")
 @allure.epic("UI Automation")
 @allure.suite("ShipAccel UI Automation")
@@ -21,7 +21,7 @@ def test_check_designer_branding_page_styles():
     with allure.step("Assert branding styles saved & persist after refresh"):
         pass
 
-@allure.id("7831")
+@allure.id("7996")
 @allure.tag("Automation")
 @allure.epic("UI Automation")
 @allure.suite("ShipAccel UI Automation")
@@ -43,7 +43,7 @@ def test_check_returns_settings_page_information():
     with allure.step("Validate Return Service configuration"):
         pass
 
-@allure.id("7827")
+@allure.id("7992")
 @allure.tag("Automation")
 @allure.epic("UI Automation")
 @allure.suite("ShipAccel UI Automation")
@@ -63,7 +63,7 @@ def test_connect_disconnect_bigcommerce_store():
     with allure.step("Disconnect store and verify status ‘Disconnected’"):
         pass
 
-@allure.id("7828")
+@allure.id("7993")
 @allure.tag("Automation")
 @allure.epic("UI Automation")
 @allure.suite("ShipAccel UI Automation")
@@ -81,7 +81,7 @@ def test_do_nothing_to_handle_after_all():
     with allure.step("Confirm no post-action handling is required"):
         pass
 
-@allure.id("7829")
+@allure.id("7994")
 @allure.tag("Automation")
 @allure.epic("UI Automation")
 @allure.suite("ShipAccel UI Automation")
@@ -101,7 +101,7 @@ def test_remove_image_then_upload_new_on_consumer_tracking():
     with allure.step("Upload a new image and verify it appears"):
         pass
 
-@allure.id("7826")
+@allure.id("7991")
 @allure.tag("Automation")
 @allure.epic("UI Automation")
 @allure.suite("ShipAccel UI Automation")
