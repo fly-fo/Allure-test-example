@@ -8,6 +8,7 @@ TITLE = "Onboard API"
 @allure.suite("Master")
 @allure.story("Onboard API")
 @allure.title(TITLE)
+@allure.layer("API Tests") 
 @allure.label("owner", "Shivam Sanjay Desale")
 @allure.label("priority", "P0")
 @allure.label("product", "pitneyship")
@@ -36,26 +37,22 @@ def test_onboard_api(action):
             attachment_type=allure.attachment_type.TEXT,
         )
 
-    # Step 2: Execute (stub until wired)
+    # Step 2: Execute (INTENTIONALLY BROKEN)
     with allure.step("Execute API request"):
-        # Example:
+        # Simulate an unexpected runtime error (implementation bug)
+        raise RuntimeError(
+            "Onboard API execution not implemented yet – simulated BROKEN test for Allure/TestOps demo"
+        )
+
+        # Example of real code (kept as comment for future):
         # resp = requests.post(f"{base_url}{endpoint}", json=payload, headers=headers, timeout=30)
         # status_code = resp.status_code
-        status_code = 200
-        assert status_code in (200, 400, 401, 403, 404)
 
-    # Step 3: Validate per scenario
+    # These steps will NOT be reached because the test breaks above,
+    # but we keep them as documentation for future implementation.
+
     with allure.step("Validate response"):
-        if action.startswith("Check All Error Codes"):
-            error_catalog_ok = True
-            assert error_catalog_ok is True
-        elif action == "Onboard multiple stores":
-            multi_store_ok = True
-            assert multi_store_ok is True
-        else:
-            happy_ok = True
-            assert happy_ok is True
+        pass
 
-    # Step 4: Traceability
     with allure.step("Attach parameters"):
         allure.attach(action, name="action", attachment_type=allure.attachment_type.TEXT)
