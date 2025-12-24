@@ -9,7 +9,7 @@ on:
       ENDPOINT:
         description: Endpoint
         required: false
-        default: https://pitneybowes.testops.cloud
+        default: https://demo.testops.cloud
       BROWSER:
         description: Browser
         required: false
@@ -23,8 +23,8 @@ on:
         required: false
 
 env:
-  ALLURE_ENDPOINT: https://pitneybowes.testops.cloud
-  ALLURE_PROJECT_ID: 100
+  ALLURE_ENDPOINT: https://demo.testops.cloud
+  ALLURE_PROJECT_ID: 4601
   ALLURE_TOKEN: ${{ secrets.ALLURE_TOKEN }}
   ALLURE_JOB_RUN_ID: ${{ github.event.inputs.ALLURE_JOB_RUN_ID }}
   ALLURE_RESULTS: "allure-results"
@@ -44,9 +44,9 @@ jobs:
       - name: install and configure allurectl
         uses: allure-framework/setup-allurectl@v1
         with:
-          allure-endpoint: https://pitneybowes.testops.cloud/
+          allure-endpoint: https://demo.testops.cloud/
           allure-token: ${{ secrets.ALLURE_TOKEN }}
-          allure-project-id: 100
+          allure-project-id: 4601
       - name: Run pytest Tests
         run: |
          allurectl watch -- pytest -q Tests --alluredir="${ALLURE_RESULTS}"
