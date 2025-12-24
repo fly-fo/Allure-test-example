@@ -6,7 +6,7 @@ TITLE = "Verify manifest and pickup not available for single payer FEDEX for CC 
 @allure.tag("Automation")
 @allure.epic("UI Automation")
 @allure.suite("ShipAccel UI Automation")
-@allure.story(TITLE)               # feature == title
+@allure.story(TITLE)
 @allure.title(TITLE)
 @allure.label("owner", "Sowmya Katamaneni")
 @allure.label("priority", "Medium")
@@ -29,6 +29,10 @@ def test_manifest_pickup_not_available_fedex_cc(address):
     with allure.step("Verify 'Schedule Pickup' action is NOT available"):
         pickup_available = False
         assert pickup_available is False
+
+    # ❌ INTENTIONAL FAILURE STEP
+    with allure.step("Force test failure for demo purposes"):
+        raise AssertionError("Intentional failure: Expected behavior mismatch for demo in Allure TestOps")
 
     with allure.step("Attach parameters for traceability"):
         allure.attach(
