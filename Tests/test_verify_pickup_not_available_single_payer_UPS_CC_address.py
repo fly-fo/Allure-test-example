@@ -4,15 +4,16 @@ import allure
 TITLE = "Verify pickup not available for single payer UPS for CC card with address"
 
 @allure.tag("Automation")
-@allure.epic("UI Automation")
-@allure.suite("ShipAccel UI Automation")
+@allure.epic("Automation")
+@allure.suite("Allure Automation")
 @allure.story(TITLE)               # feature == title
 @allure.title(TITLE)
-@allure.label("owner", "Sowmya Katamaneni")
+@allure.layer("Unit Tests")
+@allure.label("owner", "Amir")
 @allure.label("priority", "Medium")
-@allure.label("product", "shipaccel")
-@allure.label("trProject", "Shipaccel")
-@allure.label("layer", "UI")
+@allure.label("product", "Allure")
+@allure.label("trProject", "Allure testops")
+@allure.label("layer", "Unit Tests")
 @pytest.mark.parametrize("address", ["CT", "NY"], ids=["CT", "NY"])
 def test_pickup_not_available_single_payer_ups_cc(address):
     with allure.step(f"Open shipping context for address={address} (Single Payer UPS, CC card set)"):
