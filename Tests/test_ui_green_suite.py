@@ -3,16 +3,17 @@ import allure
 
 # 2
 @allure.tag("Automation")
-@allure.epic("UI Automation")
-@allure.suite("ShipAccel UI Automation")
+@allure.epic("Automation")
+@allure.suite("ShipAccel Automation")
 @allure.story("Connect Disconnect NetSuite Store")
 @allure.title("Connect Disconnect NetSuite Store")
-@allure.label("owner", "Sowmya Katamaneni")
+@allure.layer("Unit Tests")
+@allure.label("owner", "Amir")
 @allure.label("priority", "Medium")
 @allure.label("product", "pitneyship")
 @allure.label("product", "shipaccel")
 @allure.label("trProject", "Shipaccel")
-@allure.label("layer", "UI")
+@allure.label("layer", "Unit Tests")
 @pytest.mark.ui
 def test_connect_disconnect_netsuite_store():
     with allure.step("Open application / preconditions"):
@@ -25,16 +26,17 @@ def test_connect_disconnect_netsuite_store():
 
 # 3
 @allure.tag("Automation")
-@allure.epic("UI Automation")
-@allure.suite("ShipAccel UI Automation")
+@allure.epic("Automation")
+@allure.suite("ShipAccel Automation")
 @allure.story("Create and update automation rule")
 @allure.title("Create and update automation rule")
-@allure.label("owner", "Sowmya Katamaneni")
+@allure.layer("Unit Tests")
+@allure.label("owner", "Amir")
 @allure.label("priority", "Medium")
 @allure.label("product", "pitneyship")
 @allure.label("product", "shipaccel")
 @allure.label("trProject", "Shipaccel")
-@allure.label("layer", "UI")
+@allure.label("layer", "Unit Tests")
 @pytest.mark.ui
 def test_create_and_update_automation_rule():
     with allure.step("Open application / preconditions"):
@@ -47,16 +49,17 @@ def test_create_and_update_automation_rule():
 
 # 4
 @allure.tag("Automation")
-@allure.epic("UI Automation")
-@allure.suite("ShipAccel UI Automation")
+@allure.epic("Automation")
+@allure.suite("ShipAccel Automation")
 @allure.story("Create order in WIX store and verify order getting synced and we are creating shipping label successfully")
 @allure.title("Create order in WIX store and verify order getting synced and we are creating shipping label successfully")
-@allure.label("owner", "Sowmya Katamaneni")
+@allure.layer("Unit Tests")
+@allure.label("owner", "Amir")
 @allure.label("priority", "Medium")
 @allure.label("product", "pitneyship")
 @allure.label("product", "shipaccel")
 @allure.label("trProject", "Shipaccel")
-@allure.label("layer", "UI")
+@allure.label("layer", "Unit Tests")
 @pytest.mark.ui
 def test_wix_order_sync_and_label():
     with allure.step("Open application / preconditions"):
@@ -69,16 +72,17 @@ def test_wix_order_sync_and_label():
 
 # 5
 @allure.tag("Automation")
-@allure.epic("UI Automation")
-@allure.suite("ShipAccel UI Automation")
+@allure.epic("Automation")
+@allure.suite("ShipAccel Automation")
 @allure.story("Delete automation rules")
 @allure.title("Delete automation rules")
-@allure.label("owner", "Sowmya Katamaneni")
+@allure.layer("Unit Tests")
+@allure.label("owner", "Amir")
 @allure.label("priority", "Medium")
 @allure.label("product", "pitneyship")
 @allure.label("product", "shipaccel")
 @allure.label("trProject", "Shipaccel")
-@allure.label("layer", "UI")
+@allure.label("layer", "Unit Tests")
 @pytest.mark.ui
 def test_delete_automation_rules():
     with allure.step("Open application / preconditions"):
@@ -91,16 +95,17 @@ def test_delete_automation_rules():
 
 # 6
 @allure.tag("Automation")
-@allure.epic("UI Automation")
-@allure.suite("ShipAccel UI Automation")
+@allure.epic("Automation")
+@allure.suite("ShipAccel Automation")
 @allure.story("From ship orders page, print label and navigate to tracking link and verify")
 @allure.title("From ship orders page, print label and navigate to tracking link and verify")
-@allure.label("owner", "Sowmya Katamaneni")
+@allure.layer("Unit Tests")
+@allure.label("owner", "Amir")
 @allure.label("priority", "Medium")
 @allure.label("product", "pitneyship")
 @allure.label("product", "shipaccel")
 @allure.label("trProject", "Shipaccel")
-@allure.label("layer", "UI")
+@allure.label("layer", "Unit Tests")
 @pytest.mark.ui
 def test_ship_orders_print_and_tracking():
     with allure.step("Open application / preconditions"):
@@ -113,16 +118,17 @@ def test_ship_orders_print_and_tracking():
 
 # 7
 @allure.tag("Automation")
-@allure.epic("UI Automation")
-@allure.suite("ShipAccel UI Automation")
+@allure.epic("Automation")
+@allure.suite("ShipAccel Automation")
 @allure.story("Print consumer return label and email the label")
 @allure.title("Print consumer return label and email the label")
-@allure.label("owner", "Sowmya Katamaneni")
+@allure.layer("Unit Tests")
+@allure.label("owner", "Amir")
 @allure.label("priority", "Medium")
 @allure.label("product", "pitneyship")
 @allure.label("product", "shipaccel")
 @allure.label("trProject", "Shipaccel")
-@allure.label("layer", "UI")
+@allure.label("layer", "Unit Tests")
 @pytest.mark.ui
 def test_print_consumer_return_label_and_email():
     with allure.step("Open application / preconditions"):
@@ -135,16 +141,17 @@ def test_print_consumer_return_label_and_email():
 
 # 8
 @allure.tag("Automation")
-@allure.epic("UI Automation")
-@allure.suite("ShipAccel UI Automation")
+@allure.epic("Automation")
+@allure.suite("ShipAccel Automation")
 @allure.story("Set New York card as default card for Single Payer Fedex for ShipOrder flow")
 @allure.title("Set New York card as default card for Single Payer Fedex for ShipOrder flow")
-@allure.label("owner", "Sowmya Katamaneni")
+@allure.layer("Unit Tests")
+@allure.label("owner", "Amir")
 @allure.label("priority", "Medium")
 @allure.label("product", "pitneyship")
 @allure.label("product", "shipaccel")
 @allure.label("trProject", "Shipaccel")
-@allure.label("layer", "UI")
+@allure.label("layer", "Unit Tests")
 @pytest.mark.ui
 def test_set_ny_default_card_for_fedex_shiporder():
     with allure.step("Open application / preconditions"):
@@ -157,16 +164,17 @@ def test_set_ny_default_card_for_fedex_shiporder():
 
 # 9
 @allure.tag("Automation")
-@allure.epic("UI Automation")
-@allure.suite("ShipAccel UI Automation")
+@allure.epic("Automation")
+@allure.suite("ShipAccel Automation")
 @allure.story("ShipOrders V2 – Import ShipOrders through file upload and verify automation rules are applied and print labels for the orders")
 @allure.title("ShipOrders V2 – Import ShipOrders through file upload and verify automation rules are applied and print labels for the orders")
-@allure.label("owner", "Sowmya Katamaneni")
+@allure.layer("Unit Tests")
+@allure.label("owner", "Amir")
 @allure.label("priority", "Medium")
 @allure.label("product", "pitneyship")
 @allure.label("product", "shipaccel")
 @allure.label("trProject", "Shipaccel")
-@allure.label("layer", "UI")
+@allure.label("layer", "Unit Tests")
 @pytest.mark.ui
 def test_shiporders_v2_import_and_print():
     with allure.step("Open application / preconditions"):
@@ -179,16 +187,17 @@ def test_shiporders_v2_import_and_print():
 
 # 10
 @allure.tag("Automation")
-@allure.epic("UI Automation")
-@allure.suite("ShipAccel UI Automation")
+@allure.epic("Automation")
+@allure.suite("ShipAccel Automation")
 @allure.story("Shopify – Print order and Verify Order number and Source in Shipping History")
 @allure.title("Shopify – Print order and Verify Order number and Source in Shipping History")
-@allure.label("owner", "Sowmya Katamaneni")
+@allure.layer("Unit Tests")
+@allure.label("owner", "Amir")
 @allure.label("priority", "Medium")
 @allure.label("product", "pitneyship")
 @allure.label("product", "shipaccel")
 @allure.label("trProject", "Shipaccel")
-@allure.label("layer", "UI")
+@allure.label("layer", "Unit Tests")
 @pytest.mark.ui
 def test_shopify_print_and_verify_in_history():
     with allure.step("Open application / preconditions"):
@@ -200,16 +209,17 @@ def test_shopify_print_and_verify_in_history():
 
 # 12
 @allure.tag("Automation")
-@allure.epic("UI Automation")
-@allure.suite("ShipAccel UI Automation")
+@allure.epic("Automation")
+@allure.suite("ShipAccel Automation")
 @allure.story("Verify can't print labels for fileupload shiporders without automation rules")
 @allure.title("Verify can't print labels for fileupload shiporders without automation rules")
-@allure.label("owner", "Sowmya Katamaneni")
+@allure.layer("Unit Tests")
+@allure.label("owner", "Amir")
 @allure.label("priority", "Medium")
 @allure.label("product", "pitneyship")
 @allure.label("product", "shipaccel")
 @allure.label("trProject", "Shipaccel")
-@allure.label("layer", "UI")
+@allure.label("layer", "Unit Tests")
 @pytest.mark.ui
 def test_cant_print_without_rules_for_fileupload_orders():
     with allure.step("Open application / preconditions"):
@@ -222,16 +232,17 @@ def test_cant_print_without_rules_for_fileupload_orders():
 
 # 13
 @allure.tag("Automation")
-@allure.epic("UI Automation")
-@allure.suite("ShipAccel UI Automation")
+@allure.epic("Automation")
+@allure.suite("ShipAccel Automation")
 @allure.story("Verify consumer return label created for WIX order in shipping history")
 @allure.title("Verify consumer return label created for WIX order in shipping history")
-@allure.label("owner", "Sowmya Katamaneni")
+@allure.layer("Unit Tests")
+@allure.label("owner", "Amir")
 @allure.label("priority", "Medium")
 @allure.label("product", "pitneyship")
 @allure.label("product", "shipaccel")
 @allure.label("trProject", "Shipaccel")
-@allure.label("layer", "UI")
+@allure.label("layer", "Unit Tests")
 @pytest.mark.ui
 def test_wix_return_label_in_history():
     with allure.step("Open application / preconditions"):
@@ -244,16 +255,17 @@ def test_wix_return_label_in_history():
 
 # 14
 @allure.tag("Automation")
-@allure.epic("UI Automation")
-@allure.suite("ShipAccel UI Automation")
+@allure.epic("Automation")
+@allure.suite("ShipAccel Automation")
 @allure.story("Verify designer page styles that we set are updated")
 @allure.title("Verify designer page styles that we set are updated")
-@allure.label("owner", "Sowmya Katamaneni")
+@allure.layer("Unit Tests")
+@allure.label("owner", "Amir")
 @allure.label("priority", "Medium")
 @allure.label("product", "pitneyship")
 @allure.label("product", "shipaccel")
 @allure.label("trProject", "Shipaccel")
-@allure.label("layer", "UI")
+@allure.label("layer", "Unit Tests")
 @pytest.mark.ui
 def test_designer_page_styles_updated():
     with allure.step("Open application / preconditions"):
@@ -266,16 +278,17 @@ def test_designer_page_styles_updated():
 
 # 15
 @allure.tag("Automation")
-@allure.epic("UI Automation")
-@allure.suite("ShipAccel UI Automation")
+@allure.epic("Automation")
+@allure.suite("ShipAccel Automation")
 @allure.story("Verify file upload ship order doesn't have email return link button in shipping history")
 @allure.title("Verify file upload ship order doesn't have email return link button in shipping history")
-@allure.label("owner", "Sowmya Katamaneni")
+@allure.layer("Unit Tests")
+@allure.label("owner", "Amir")
 @allure.label("priority", "Medium")
 @allure.label("product", "pitneyship")
 @allure.label("product", "shipaccel")
 @allure.label("trProject", "Shipaccel")
-@allure.label("layer", "UI")
+@allure.label("layer", "Unit Tests")
 @pytest.mark.ui
 def test_no_email_return_link_for_file_upload_order():
     with allure.step("Open application / preconditions"):
@@ -288,16 +301,17 @@ def test_no_email_return_link_for_file_upload_order():
 
 # 16
 @allure.tag("Automation")
-@allure.epic("UI Automation")
-@allure.suite("ShipAccel UI Automation")
+@allure.epic("Automation")
+@allure.suite("ShipAccel Automation")
 @allure.story("Verify if we are able to set NY address credit card as default card for Single Payer Fedex")
 @allure.title("Verify if we are able to set NY address credit card as default card for Single Payer Fedex")
-@allure.label("owner", "Sowmya Katamaneni")
+@allure.layer("Unit Tests")
+@allure.label("owner", "Amir")
 @allure.label("priority", "Medium")
 @allure.label("product", "pitneyship")
 @allure.label("product", "shipaccel")
 @allure.label("trProject", "Shipaccel")
-@allure.label("layer", "UI")
+@allure.label("layer", "Unit Tests")
 @pytest.mark.ui
 def test_set_ny_default_card_for_fedex_general():
     with allure.step("Open application / preconditions"):
@@ -310,16 +324,17 @@ def test_set_ny_default_card_for_fedex_general():
 
 # 17
 @allure.tag("Automation")
-@allure.epic("UI Automation")
-@allure.suite("ShipAccel UI Automation")
+@allure.epic("Automation")
+@allure.suite("ShipAccel Automation")
 @allure.story("Verify return address, policy description, policy url that was set in Return Settings page is applied")
 @allure.title("Verify return address, policy description, policy url that was set in Return Settings page is applied")
-@allure.label("owner", "Sowmya Katamaneni")
+@allure.layer("Unit Tests")
+@allure.label("owner", "Amir")
 @allure.label("priority", "Medium")
 @allure.label("product", "pitneyship")
 @allure.label("product", "shipaccel")
 @allure.label("trProject", "Shipaccel")
-@allure.label("layer", "UI")
+@allure.label("layer", "Unit Tests")
 @pytest.mark.ui
 def test_return_settings_applied():
     with allure.step("Open application / preconditions"):
@@ -332,16 +347,17 @@ def test_return_settings_applied():
 
 # 18
 @allure.tag("Automation")
-@allure.epic("UI Automation")
-@allure.suite("ShipAccel UI Automation")
+@allure.epic("Automation")
+@allure.suite("ShipAccel Automation")
 @allure.story("Verify we are able to email the returns link for the WIX order shipping transaction and able to access the page")
 @allure.title("Verify we are able to email the returns link for the WIX order shipping transaction and able to access the page")
-@allure.label("owner", "Sowmya Katamaneni")
+@allure.layer("Unit Tests")
+@allure.label("owner", "Amir")
 @allure.label("priority", "Medium")
 @allure.label("product", "pitneyship")
 @allure.label("product", "shipaccel")
 @allure.label("trProject", "Shipaccel")
-@allure.label("layer", "UI")
+@allure.label("layer", "Unit Tests")
 @pytest.mark.ui
 def test_email_returns_link_for_wix_order():
     with allure.step("Open application / preconditions"):
