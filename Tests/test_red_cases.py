@@ -7,6 +7,7 @@ import allure
 @allure.suite("ShipAccel UI Automation")
 @allure.story("Check designer branding page styles")
 @allure.title("Check designer branding page styles")
+@allure.layer("API Tests") 
 @allure.label("owner", "Sowmya Katamaneni")
 @allure.label("priority", "Medium")
 @allure.label("product", "shipaccel")
@@ -23,15 +24,16 @@ def test_check_designer_branding_page_styles():
 
 @allure.id("7996")
 @allure.tag("Automation")
-@allure.epic("UI Automation")
-@allure.suite("ShipAccel UI Automation")
+@allure.epic("Automation")
+@allure.suite("ShipAccel Automation")
 @allure.story("Check returns settings page information(return address, url policy, description and return service)")
 @allure.title("Check returns settings page information(return address, url policy, description and return service)")
-@allure.label("owner", "Sowmya Katamaneni")
+@allure.layer("API Tests")
+@allure.label("owner", "Amir")
 @allure.label("priority", "Medium")
 @allure.label("product", "shipaccel")
 @allure.label("trProject", "Shipaccel")
-@allure.label("layer", "UI")
+@allure.label("layer", "API Tests")
 @pytest.mark.ui
 def test_check_returns_settings_page_information():
     with allure.step("Open Returns Settings page"):
@@ -45,15 +47,16 @@ def test_check_returns_settings_page_information():
 
 @allure.id("7992")
 @allure.tag("Automation")
-@allure.epic("UI Automation")
-@allure.suite("ShipAccel UI Automation")
+@allure.epic("Automation")
+@allure.suite("ShipAccel Automation")
 @allure.story("Connect disconnect BigCommerce Store")
 @allure.title("Connect disconnect BigCommerce Store")
+@allure.layer("API Tests")
 @allure.label("owner", "Sowmya Katamaneni")
 @allure.label("priority", "Medium")
 @allure.label("product", "shipaccel")
 @allure.label("trProject", "Shipaccel")
-@allure.label("layer", "UI")
+@allure.label("layer", "API Tests")
 @pytest.mark.ui
 def test_connect_disconnect_bigcommerce_store():
     with allure.step("Open Connectors > BigCommerce"):
@@ -65,15 +68,16 @@ def test_connect_disconnect_bigcommerce_store():
 
 @allure.id("7993")
 @allure.tag("Automation")
-@allure.epic("UI Automation")
-@allure.suite("ShipAccel UI Automation")
+@allure.epic("Automation")
+@allure.suite("ShipAccel Automation")
 @allure.story("Do nothing to handle after All")
 @allure.title("Do nothing to handle after All")
-@allure.label("owner", "Sowmya Katamaneni")
+@allure.layer("API Tests")
+@allure.label("owner", "Amir")
 @allure.label("priority", "Medium")
 @allure.label("product", "shipaccel")
 @allure.label("trProject", "Shipaccel")
-@allure.label("layer", "UI")
+@allure.label("layer", "API Tests")
 @pytest.mark.ui
 def test_do_nothing_to_handle_after_all():
     with allure.step("Navigate to target area"):
@@ -81,17 +85,18 @@ def test_do_nothing_to_handle_after_all():
     with allure.step("Confirm no post-action handling is required"):
         pass
 
-@allure.id("7994")
+
 @allure.tag("Automation")
-@allure.epic("UI Automation")
-@allure.suite("ShipAccel UI Automation")
+@allure.epic("Automation")
+@allure.suite("ShipAccel Automation")
 @allure.story("Removing image on consumer tracking page means no image is present. Able to upload another image")
 @allure.title("Removing image on consumer tracking page means no image is present. Able to upload another image")
-@allure.label("owner", "Sowmya Katamaneni")
+@allure.layer("API Tests")
+@allure.label("owner", "Amir")
 @allure.label("priority", "Medium")
 @allure.label("product", "shipaccel")
 @allure.label("trProject", "Shipaccel")
-@allure.label("layer", "UI")
+@allure.label("layer", "API Tests")
 @pytest.mark.ui
 def test_remove_image_then_upload_new_on_consumer_tracking():
     with allure.step("Open Consumer Tracking page"):
@@ -101,17 +106,17 @@ def test_remove_image_then_upload_new_on_consumer_tracking():
     with allure.step("Upload a new image and verify it appears"):
         pass
 
-@allure.id("7991")
 @allure.tag("Automation")
-@allure.epic("UI Automation")
-@allure.suite("ShipAccel UI Automation")
+@allure.epic("Automation")
+@allure.suite("ShipAccel Automation")
 @allure.story("Uploads an image to consumer tracking page")
 @allure.title("Uploads an image to consumer tracking page")
-@allure.label("owner", "Sowmya Katamaneni")
+@allure.layer("API Tests") 
+@allure.label("owner", "Amir")
 @allure.label("priority", "Medium")
 @allure.label("product", "shipaccel")
 @allure.label("trProject", "Shipaccel")
-@allure.label("layer", "UI")
+@allure.label("layer", "API Tests")
 @pytest.mark.ui
 def test_upload_image_on_consumer_tracking():
     with allure.step("Open Consumer Tracking page"):
